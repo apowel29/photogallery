@@ -1,0 +1,281 @@
+/* Global Css */
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #000000;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+figcaption,
+label,
+input,
+small {
+  font-size: 1em;
+}
+
+nav a {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+}
+
+/* Logo text */
+.logo-text {
+  color: #007d7b;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  background: #ffffff;
+  font-size: 2em;
+  max-width: 500px;
+}
+
+/* Nav Css */
+.nav {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 0;
+}
+
+.nav-links a {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+/* Main Css */
+
+.main-con {
+  border: solid;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 0.5em;
+}
+
+.about-section h2,
+.gallery-section h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  width: 100%;
+}
+.about-section p,
+.gallery-section p {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+/* Photo card */
+
+.card {
+  width: 95%;
+  position: relative;
+  margin: 1em auto;
+  /* padding: 1em; */
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.Guatemala p,
+.Wyoming p {
+  top: 0;
+}
+.iran p,
+.ireland p,
+.rocky-mountain p,
+.Switzerland p,
+.uk p,
+.usa p {
+  top: 0;
+  color: #000000;
+}
+
+.italy p {
+  color: #000000;
+}
+
+/* Contact Css */
+.contact-section {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.contact-section h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  width: 100%;
+  color: #ffffff;
+}
+
+.contact-section p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.contact-section form div {
+  /* border: solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 1em auto;
+}
+
+.contact-section form label {
+  color: #ffffff;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.contact-section form input {
+  color: #007d7b;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+.contact-section form input::placeholder {
+  color: #007d7b;
+  font-weight: bold;
+}
+
+.submit-btn {
+  background: #007d7b;
+  color: #ffffff;
+  width: 60%;
+  font-size: 1em;
+  display: block;
+  margin: auto;
+  border-radius: 1em;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+/* Footer */
+.footer {
+  margin-top: 2em;
+}
+.footer p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 880px) {
+  .logo-text {
+    text-align: left;
+  }
+  .nav-links a {
+    font-size: 1.5em;
+  }
+  .about-section h2,
+  .gallery-section h2 {
+    font-size: 2em;
+  }
+  .about-section p,
+  .gallery-section p {
+    font-size: 1.25em;
+  }
+  .logo-text {
+    width: 80%;
+    max-width: 900px;
+    font-size: 3em;
+  }
+  .main-con {
+    width: 80%;
+    max-width: 900px;
+  }
+  .card {
+    margin: 0;
+  }
+  .photo-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.2em !important;
+  }
+  .contact-section {
+    width: 80%;
+    max-width: 900px;
+  }
+  .contact-section p {
+    font-size: 1.25em;
+  }
+  .contact-section h2 {
+    font-size: 2em;
+  }
+  .contact-section label,
+  .contact-section input {
+    font-size: 1em;
+  }
+  footer p {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .nav ul {
+    justify-content: flex-end;
+    margin: 2em 0;
+  }
+  .nav {
+    width: 80%;
+    max-width: 1100px;
+  }
+  .logo-text {
+    max-width: 1100px;
+  }
+  .main-con {
+    max-width: 1100px;
+  }
+  .photo-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .contact-section {
+    max-width: 1100px;
+  }
+}
